@@ -346,7 +346,7 @@ main .itemContainer .itemContent p>a:hover {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    max-width: 550px;
+    margin: 0 5px;
     text-align: left;
     font-family: "CaviarDreams";
 }
@@ -561,7 +561,6 @@ main .itemContainer .itemContent p>a:hover {
     align-items: center;
     background-color: #3A424E;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px #fff;
 }
 
 .delivery .containerDelivery .contentItens .deliveryItens {
@@ -719,7 +718,7 @@ main .itemContainer .itemContent p>a:hover {
 }
 
 .faleConosco .contentFaleConosco .containerContact button {
-    color: #000;
+    color: #fff;
     display: block;
     font-size: 17px;
     font-family: "Arial";
@@ -730,7 +729,7 @@ main .itemContainer .itemContent p>a:hover {
     text-decoration: none;
     border-radius: 5px;
     margin: auto;
-    background-color: red;
+    background-color: #850D23;
 }
 
 .faleConosco .contentFaleConosco .containerContact p {
@@ -1159,14 +1158,12 @@ footer span a:hover {
         flex-direction: column;
     }
 
-    .delivery .containerDelivery .contentImg {
+    .delivery .containerDelivery {
         width: auto;
     }
 
-    .delivery .containerDelivery .contentImg img {
-        width: 200px;
-        height: 200px;
-        transform: rotate(0deg);
+    .delivery .containerDelivery img {
+        display: none
     }
 
     .delivery .containerDelivery .contentItens {
@@ -1177,26 +1174,63 @@ footer span a:hover {
 
     .delivery .containerDelivery .contentItens .deliveryItens {
         padding: 0;
-        background-image: linear-gradient(red, black, black);
+        background: #000;
     }
 
     .delivery .containerDelivery .contentItens .deliveryItens .Itens {
-        width: 95%;
+        width: 100%;
         padding: 0;
         margin: 0 auto;
     }
 
     .delivery .containerDelivery .contentItens .deliveryItens .Itens i {
-        border-radius: none;
-        background-color: transparent;
+        width: 50px;
+        border-radius: 10px;
     }
 
     /*Seçao contato fale conosco*/
+    .faleConosco {
+        height: auto;
+    }
+
     .faleConosco .faleConoscoHeader h1 {
         font-size: 70px;
     }
 
     .faleConosco .contentFaleConosco {
         flex-direction: column;
+    }
+
+    .faleConosco .contentFaleConosco .containerContact {
+        width: 100%;
+    }
+
+    .faleConosco .contentFaleConosco .containerContact .containerContato {
+        width: 100%;
+    }
+
+    /*Seção de horarios*/
+    .containerHorario .contentHorario {
+        flex-direction: column;
+    }
+
+    .containerHorario .contentHorario .Itens {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /*Seção de apresentaçaõ e pagamentos*/
+    .redes {
+        padding: 5px;
+    }
+
+    .redes .containerRedes {
+        flex-direction: column;
+    }
+
+    .redes .containerRedes .contentRedes {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
     }
 }

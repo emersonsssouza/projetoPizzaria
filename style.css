@@ -917,7 +917,9 @@ footer span a:hover {
     color: #850D23;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 390px) and (max-width: 844px) {
+
+    /*Responsividade para Smartphones & dispositivos menores*/
     .headerDesktop {
         display: none;
     }
@@ -1233,5 +1235,26 @@ footer span a:hover {
         width: 100%;
         height: auto;
         margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*Responsividade para TABLETS & outros dispositivos*/
+    .carroselSlider .container-slide .action-button {
+        font-size: 50px;
+    }
+
+    .carroselSlider .container-slide .container-items {
+        /*Sem necessidade de alteração*/
+    }
+
+    .carroselSlider .container-slide .container-items .item {
+        /*Sem necessidade alteração*/
+    }
+
+    .carroselSlider .container-slide .container-items .item img {
+        width: 390px;
+        height: 300px;
     }
 }

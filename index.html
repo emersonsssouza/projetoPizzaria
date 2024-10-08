@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>La Casa dela Pizza</title>
+</head>
+
+<body>
+    <header class="headerMobile">
+        <img src="Assets/LogoTipo/item (1).jpeg" alt="" width="50px">
+        <div id="myNav" class="headerNav">
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navItems">
+                <a href="#">Cardápio</a>
+                <a href="#">Delivery</a>
+                <a href="#">Reservas</a>
+                <a href="#">Nossas Casas</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+    </header>
+
+    <header class="headerDesktop">
+        <img src="Assets/LogoTipo/item (1).jpeg" alt="" />
+        <nav>
+            <div class="nav-item">
+                <button class="nav-button">Cardápio</button>
+            </div>
+
+            <div class="nav-item">
+                <button class="nav-button">Delivery</button>
+            </div>
+
+            <div class="nav-item">
+                <button class="nav-button">Reservas</button>
+            </div>
+
+            <div class="nav-item">
+                <button class="nav-button">
+                    Nossas Casas
+                    <span class="fas fa-chevron-down"></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Igaratá</a>
+                    <a href="#">Jacareí</a>
+                    <a href="#">São José dos Campos</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button class="nav-button">
+                    Blog
+                    <span class="fas fa-chevron-down"></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Vídeos</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Sobre Nós</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button class="nav-button">
+                    Contato
+                    <span class="fas fa-chevron-down"></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Eventos</a>
+                </div>
+            </div>
+        </nav>
+        <!--OK-->
+    </header>
+
+    <main>
+        <section class="itemContainer">
+            <article class="itemContent">
+                <h1>O sabor da Margherita</h1>
+                <h2>Há 20 anos na Gastronomia Brasileira</h2>
+                <p><a href="">Conheça nossa historia</a></p>
+            </article>
+            <!--OK-->
+        </section>
+
+        <section class="carroselSlider">
+            <div class="carroselInformation">
+                <i class="fas fa-utensils"></i>
+                <h1>cardápio</h1>
+                <p>Conheça alguns de nossos produtos</p>
+            </div>
+            <!--Carrosel-->
+            <div class="container-slide">
+                <div class="action-button" id="previous">&laquo;</div>
+                <div class="container-items" id="container-items"></div>
+                <div class="action-button" id="next">&raquo;</div>
+            </div>
+
+        </section>
+
+        <section class="home">
+            <div class="homeContainer">
+                <span class="fas fa-home"></span>
+                <h1>Conheça nossas casas</h1>
+                <p>
+                    Nossas unidades em Igaratá e São José dos Campos oferecem um
+                    ambiente agradável, bonito, confortável e acolhedor.
+                </p>
+            </div>
+
+            <div class="homeContainerContent">
+                <div class="homeContent">
+                    <img src="Assets/Imagens/local1.jpg" alt="" />
+                    <h2>Local Igaratá</h2>
+                    <p>
+                        Nosso local principal fica na Rua ... - Centro. Aqui tudo começou
+                        com receitas e pizzas napolitanas que até hoje encantam a todos.
+                    </p>
+                    <p>
+                        Em 2020, nos reinventamos, trazendo novos sabores e oferecendo
+                        mais opções aos nossos clientes, além de mantermos um ambiente
+                        acolhedor e um clima familiar.
+                    </p>
+                </div>
+                <div class="homeContent">
+                    <img src="Assets/Imagens/local2.jpg" alt="" />
+                    <h2>Local Igaratá</h2>
+                    <p>
+                        Nosso local principal fica na Rua ... - Centro. Aqui tudo começou
+                        com receitas e pizzas napolitanas que até hoje encantam a todos.
+                    </p>
+                    <p>
+                        Em 2020, nos reinventamos, trazendo novos sabores e oferecendo
+                        mais opções aos nossos clientes, além de mantermos um ambiente
+                        acolhedor e um clima familiar.
+                    </p>
+
+                </div>
+            </div>
+            <!--OK-->
+        </section>
+
+        <section class="cardapio">
+            <div class="cardapioItem">
+                <span class="fas fa-star"></span>
+                <h1>Destaques do Cardápio</h1>
+            </div>
+            <div class="cardapioSection">
+                <div class="cardapioContainer">
+                    <div class="cardapioImg">
+                        <img src="Assets/Imagens/itemCardapio4.jpg" alt="" />
+                    </div>
+                    <div class="cardapioContent">
+                        <h2>Pizza Marguerita</h2>
+                        <p>
+                            A Pizza Margherita de Nápoles e tambem da La casa Dela Pizza que
+                            faz a genuína pizza napolitana. A Margherita é a nossa pizza
+                            clássica e a mais premiada de São Paulo.
+                        </p>
+                        <a href="">SAIBA MAIS</a>
+                    </div>
+                </div>
+
+                <div class="cardapioContainer">
+                    <div class="cardapioImg">
+                        <img src="Assets/Imagens/itemCardapio3.jpg" alt="" />
+                    </div>
+                    <div class="cardapioContent">
+                        <h2>Vinhos</h2>
+                        <p>
+                            Oferecemos uma seleção exclusiva de vinhos, com rótulos
+                            cuidadosamente escolhidos e uma ampla diversidade de sabores,
+                            perfeitos para harmonizar com cada prato do nosso cardápio. Seja
+                            um tinto encorpado, um branco leve ou um rosé refrescante
+                        </p>
+                        <a href="">SAIBA MAIS</a>
+                    </div>
+                </div>
+
+                <div class="cardapioContainer">
+                    <div class="cardapioImg">
+                        <img src="Assets/Imagens/itemCardapio2.jpg" alt="" />
+                    </div>
+                    <div class="cardapioContent">
+                        <h2>Lanches</h2>
+                        <p>
+                            A Pizza Margherita de Nápoles e tambem da La casa Dela Pizza que
+                            faz a genuína pizza napolitana. A Margherita é a nossa pizza
+                            clássica e a mais premiada de São Paulo.
+                        </p>
+                        <a href="">SAIBA MAIS</a>
+                    </div>
+                </div>
+
+                <div class="cardapioContainer">
+                    <div class="cardapioImg">
+                        <img src="Assets/Imagens/itemCardapio1.jpg" alt="" />
+                    </div>
+                    <div class="cardapioContent">
+                        <h2>Pratos</h2>
+                        <p>
+                            LAnches Classico
+                        </p>
+                        <a href="">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reserve">
+            <div class="containerReserve">
+                <h1>
+                    A La Pizza ganhou a admiração e tornou-se referencia
+                </h1>
+            </div>
+            <!--OK-->
+        </section>
+
+        <section class="delivery">
+            <div class="contentHeader">
+                <i class="fas fa-motorcycle"></i>
+                <h1>Delivery</h1>
+                <i class="fas fa-phone"><span>(11) 9999-9999</span></i>
+                <p>Nossas Unidades</p>
+            </div>
+
+            <div class="containerDelivery">
+                <img src="Assets/Imagens/backGroundEntregador.png" alt="" />
+                <div class="contentItens">
+                    <div class="deliveryItens">
+                        <div class="Itens">
+                            <i class="fas fa-home"></i>
+                            <div class="infoItens">
+                                <h1>Garrison</h1>
+                                <p>Avenida Alfredo Manoel Francisco, 330</p>
+                            </div>
+                        </div>
+
+                        <div class="iconNavigation">
+                            <div class="itemNav"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="itemNav"><i class="fas fa-car"></i></div>
+                        </div>
+
+                        <div class="Itens">
+                            <i class="fas fa-home"></i>
+                            <div class="infoItens">
+                                <h1>Nosdie</h1>
+                                <p>Rodovia Henrique Eroles, 773</p>
+                            </div>
+                        </div>
+
+                        <div class="iconNavigation">
+                            <div class="itemNav"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="itemNav"><i class="fas fa-car"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="Assets/Imagens/backGroundEntregadorRight.png" alt="">
+            </div>
+            <!--OK-->
+        </section>
+
+        <section class="faleConosco">
+            <div class="faleConoscoHeader">
+                <span class="fas fa-comments"></span>
+                <h1>Fale Conosco</h1>
+            </div>
+
+            <div class="contentFaleConosco">
+                <div class="containerContact">
+                    <div class="containerContato">
+                        <h2>Garrison</h2>
+                        <i class="fas fa-home"><span>Av Alfredo Manoel Francisco, 330</span></i>
+                        <i class="fas fa-phone-alt"><span>(11) 9999 - 9999</span></i>
+                        <i class="fas fa-phone-alt"><span>(11) 0000 - 0000</span></i>
+                        <i class="fas fa-envelope"><span>atendimentogarrison@pizzaria.com.br</span></i>
+                    </div>
+                    <div class="containerContato">
+                        <h2>Nosdie</h2>
+                        <i class="fas fa-home"><span>Rod Enrique Eroles, 773</span></i>
+                        <i class="fas fa-phone-alt"><span>(12) 9999 - 0000</span></i>
+                        <i class="fas fa-phone-alt"><span>(12) 8888 - 8888</span></i>
+                        <i class="fas fa-envelope"><span>atendimentonosdie@pizzaria.com.br</span></i>
+                    </div>
+                </div>
+
+                <div class="containerContact">
+                    <form method="get" action="index.php">
+                        <input type="text" name="nome" id="Nome" placeholder="Nome" />
+                        <input type="email" name="email" id="Email" placeholder="Email" />
+                        <input type="tel" name="tel" id="Tel" placeholder="Telefone" />
+                        <select name="select" id="">
+                            <option value="local1" selected>Igaratá</option>
+                            <option value="local2">SJC</option>
+                            <option value="local3">Outros</option>
+                        </select>
+
+                        <select name="info" id="">
+                            <option value="info1" selected>Informações</option>
+                            <option value="info2">Reclamações</option>
+                            <option value="info3">Sugestões</option>
+                            <option value="info4">Eventos</option>
+                        </select>
+                        <textarea name="textarea" id="Mensagem" placeholder="Mensagem"></textarea>
+
+                        <!-- Botão de enviar o formulário -->
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p>(*) Todos os campos são de preenchimento obrigatório.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="containerHorario">
+            <div class="contentHorario">
+                <div class="Itens">
+                    <h1>Garrison</h1>
+                    <div class="horarioItens">
+                        <i class="fas fa-clock"></i>
+                        <div class="horarioItem">
+                            <p>De segunda-feira a Sábado:</p>
+                            <p>Das 18:00 às 00:00</p>
+                        </div>
+                    </div>
+
+                    <div class="horarioItens">
+                        <i class="fas fa-clock"></i>
+                        <div class="horarioItem">
+                            <p>Domingo Jantar:</p>
+                            <p>Das 18:00 às 00:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Itens">
+                    <h1>Nosdie</h1>
+                    <div class="horarioItens">
+                        <i class="fas fa-clock"></i>
+                        <div class="horarioItem">
+                            <p>De segunda-feira a Sábado:</p>
+                            <p>Das 18:00 às 00:00</p>
+                        </div>
+                    </div>
+
+                    <div class="horarioItens">
+                        <i class="fas fa-clock"></i>
+                        <div class="horarioItem">
+                            <p>Domingo Jantar:</p>
+                            <p>Das 18:00 às 00:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="redes">
+            <div class="containerRedes">
+                <div class="contentRedes">
+                    <img id="imgContent1" src="Assets/LogoTipo/item (1).jpeg" alt="" />
+                    <p>
+                        A La Casa Dela Pizza, tem uma história de sucesso com definitivas
+                        contribuições á gastronomia do estado de São Paulo
+                    </p>
+                </div>
+                <div class="contentRedes">
+                    <h1>Nossas Redes</h1>
+                    <div class="itensRedes">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h2>Formas de Pagamento</h2>
+                    <div class="itensCartoes">
+                        <img src="assets/LogoTipo/item (2).png" alt="" />
+                    </div>
+                    <i id="siren" class="fas fa-bullhorn"><span>Alerta a Clientes</span></i>
+                </div>
+                <div class="contentRedes" id="contentRedes">
+                    <div class="contentRedesImg">
+                        <a href="">
+                            <img src="assets/LogoTipo/item (1).png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Desenvolvido por <a href="">Emerson Santos</a></span>
+    </footer>
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

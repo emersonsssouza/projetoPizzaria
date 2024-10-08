@@ -884,12 +884,13 @@ main .itemContainer .itemContent p>a:hover {
 }
 
 .redes .containerRedes .contentRedes .contentRedesImg {
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
 }
 
 .redes .containerRedes .contentRedes .contentRedesImg img {
-    width: max-content;
+    width: 100%;
 }
 
 footer {

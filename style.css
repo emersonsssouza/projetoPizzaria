@@ -1244,7 +1244,7 @@ footer span a:hover {
     body,
     main {
         width: 100vw;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     main .itemContainer .itemContent h1 {
@@ -1273,5 +1273,23 @@ footer span a:hover {
         display: flex;
         flex-wrap: nowrap;
         width: auto;
+    }
+
+    .delivery .containerDelivery .contentItens .deliveryItens {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .deliveryItens .iconNavigation {
+        display: none;
+    }
+
+    .delivery .containerDelivery .contentItens {
+        background-color: #1A1A1A;
+    }
+
+    .delivery .containerDelivery img {
+        display: none;
     }
 }

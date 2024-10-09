@@ -460,29 +460,14 @@ main .itemContainer .itemContent p>a:hover {
 /*Fim*/
 .reserve {
     width: 100%;
-    height: 600px;
-    background-image: url(Assets/Imagens/teste[\ \(5\).jpg);
-    background-position: center;
+    height: 700px;
+    background-image: url(Assets/Imagens/backgroundSection01.jpg);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-}
-
-.reserve .containerReserve {
-    display: block;
-    width: 50%;
-    text-align: center;
-}
-
-.reserve .containerReserve h1 {
-    font-family: "greatVibes";
-    font-size: 70px;
-    font-weight: normal;
-    letter-spacing: 4px;
-    padding: 10px;
-    color: red;
 }
 
 /*SEÇÃO DELIVERY*/
@@ -491,12 +476,6 @@ main .itemContainer .itemContent p>a:hover {
     height: auto;
     padding: 10px;
     background: #000000e5;
-}
-
-.delivery .containerDelivery {
-    height: auto;
-    display: flex;
-    flex-direction: row;
 }
 
 .delivery .contentHeader {
@@ -514,9 +493,12 @@ main .itemContainer .itemContent p>a:hover {
 }
 
 .delivery .contentHeader i {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
     width: max-content;
-    margin: 10px auto;
+    text-align: center;
     padding: 10px;
     border-radius: 20px;
     color: #fff;
@@ -524,6 +506,7 @@ main .itemContainer .itemContent p>a:hover {
 }
 
 .delivery .contentHeader i>span {
+    width: auto;
     font-family: "Arial";
     font-weight: normal;
     letter-spacing: 2px;
@@ -532,92 +515,11 @@ main .itemContainer .itemContent p>a:hover {
 }
 
 .delivery .contentHeader p {
-    font-family: "greatVibes";
-    font-size: 100px;
+    font-family: "caviarDreams";
+    font-size: 20px;
     letter-spacing: 4px;
     text-align: center;
     padding: 10px;
-    color: red;
-}
-
-.delivery .containerDelivery {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-}
-
-.delivery .containerDelivery .contentItens {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3A424E;
-    border-radius: 10px;
-}
-
-.delivery .containerDelivery .contentItens .deliveryItens {
-    width: 600px;
-    height: max-content;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.deliveryItens .Itens {
-    width: 100%;
-    display: flex;
-    margin: 20px 0;
-    padding: 5px;
-}
-
-.deliveryItens .Itens i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: auto;
-    font-size: 30px;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: var(--Hover1);
-    color: #fff;
-}
-
-.deliveryItens .Itens .infoItens {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.deliveryItens .Itens .infoItens h1 {
-    font-family: "Arial";
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: normal;
-    color: #fff;
-}
-
-.deliveryItens .Itens .infoItens p {
-    font-family: "Arial";
-    font-size: 20px;
-    color: #fff;
-}
-
-.deliveryItens .iconNavigation {
-    width: max-content;
-    padding: 10px;
-    margin: 0 10px;
-    display: flex;
-    gap: 10px;
-    display: flex;
-}
-
-.deliveryItens .iconNavigation .itemNav i {
     color: #fff;
 }
 
@@ -647,17 +549,22 @@ main .itemContainer .itemContent p>a:hover {
     font-size: 100px;
     font-weight: normal;
     color: red;
-
 }
 
 .faleConosco .contentFaleConosco {
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.faleConosco .contentFaleConosco .containerContact {
+    width: 50%;
+}
+
 .faleConosco .contentFaleConosco .containerContact .containerContato {
-    width: 35vw;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
@@ -1127,7 +1034,7 @@ footer span a:hover {
     }
 
     .reserve {
-        background-image: url(Assets/Imagens/backgroundSection01.jpg);
+        background-image: url(Assets/Imagens/itemMobile4.jpg);
     }
 
     .reserve .containerReserve {
@@ -1149,37 +1056,7 @@ footer span a:hover {
     }
 
     .delivery .contentHeader p {
-        font-size: 50px;
-    }
-
-    .delivery .containerDelivery {
-        flex-direction: column;
-    }
-
-    .delivery .containerDelivery {
-        width: auto;
-    }
-
-    .delivery .containerDelivery .contentItens {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens {
-        padding: 0;
-        background: #000;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens .Itens {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens .Itens i {
-        width: 50px;
-        border-radius: 10px;
+        font-size: 18px;
     }
 
     /*Seçao contato fale conosco*/
@@ -1444,7 +1321,7 @@ footer span a:hover {
     }
 
     .reserve {
-        background-image: url(Assets/Imagens/backgroundSection01.jpg);
+        background-image: url(Assets/Imagens/itemMobile4.jpg);
     }
 
     .reserve .containerReserve {
@@ -1467,36 +1344,6 @@ footer span a:hover {
 
     .delivery .contentHeader p {
         font-size: 50px;
-    }
-
-    .delivery .containerDelivery {
-        flex-direction: column;
-    }
-
-    .delivery .containerDelivery {
-        width: auto;
-    }
-
-    .delivery .containerDelivery .contentItens {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens {
-        padding: 0;
-        background: #000;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens .Itens {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens .Itens i {
-        width: 50px;
-        border-radius: 10px;
     }
 
     /*Seçao contato fale conosco*/
@@ -1573,19 +1420,5 @@ footer span a:hover {
         display: flex;
         flex-wrap: nowrap;
         width: auto;
-    }
-
-    .delivery .containerDelivery .contentItens .deliveryItens {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-    }
-
-    .deliveryItens .iconNavigation {
-        display: none;
-    }
-
-    .delivery .containerDelivery .contentItens {
-        background-color: #1A1A1A;
     }
 }

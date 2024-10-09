@@ -1244,7 +1244,7 @@ footer span a:hover {
     body,
     main {
         width: 100vw;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     main .itemContainer .itemContent h1 {

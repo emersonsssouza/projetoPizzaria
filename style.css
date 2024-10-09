@@ -1241,6 +1241,16 @@ footer span a:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     /*Responsividade para TABLETS & outros dispositivos*/
+    body,
+    main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main .itemContainer .itemContent h1 {
+        font-weight: bold;
+    }
+
     .carroselSlider .container-slide .action-button {
         font-size: 50px;
     }
@@ -1254,7 +1264,14 @@ footer span a:hover {
     }
 
     .carroselSlider .container-slide .container-items .item img {
-        width: 390px;
+        width: 380px;
         height: 300px;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioContent a {
+        /*Teste*/
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
     }
 }

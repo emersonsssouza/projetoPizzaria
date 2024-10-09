@@ -1243,7 +1243,7 @@ footer span a:hover {
     /*Responsividade para TABLETS & outros dispositivos*/
     body,
     main {
-        width: 100%;
+        width: 100vw;
         overflow-x: hidden;
     }
 

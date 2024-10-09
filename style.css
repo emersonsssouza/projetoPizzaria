@@ -912,7 +912,7 @@ footer span a:hover {
     color: #850D23;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 
     /*Responsividade para Smartphones & dispositivos menores*/
     .headerDesktop {
@@ -1229,9 +1229,326 @@ footer span a:hover {
     }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
 
-    /*Responsividade para TABLETS & outros dispositivos*/
+    /*Responsividade para Smartphones intermediarios (maiores)*/
+    .headerDesktop {
+        display: none;
+    }
+
+    body,
+    main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .headerMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--Hover1);
+        padding: 1.5rem;
+    }
+
+    .headerNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .navItems {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .navItems a {
+        font-family: "caviarDreams";
+    }
+
+    .headerNav a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .headerNav a:hover,
+    .headerNav a:focus {
+        color: #f1f1f1;
+    }
+
+    .headerNav .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .headerMobile span>i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    /*Container inicial com BG*/
+    main .itemContainer {
+        align-items: flex-start;
+        height: 600px;
+    }
+
+    main .itemContainer .itemContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 600px;
+    }
+
+    main .itemContainer .itemContent h1 {
+        font-size: 80px;
+    }
+
+    main .itemContainer .itemContent h2 {
+        font-family: "caviarDreams";
+        font-size: 25px;
+    }
+
+    main .itemContainer .itemContent p>a {
+        font-size: 24px;
+        background-color: rgba(245, 245, 245, 0.733);
+        color: #000;
+    }
+
+    /*Carrosel de Imagens*/
+    .carroselSlider {
+        height: calc(550px + 10px);
+    }
+
+    .carroselSlider .carroselInformation h1 {
+        font-size: 80px;
+    }
+
+    .carroselSlider .carroselInformation p {
+        font-size: 17px;
+    }
+
+    .carroselSlider .container-slide {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .container-items {
+        width: 100%;
+        height: 400px;
+    }
+
+    .item {
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+
+    .item:first-child {
+        margin-left: 0px;
+    }
+
+    .item img {
+        width: 290px;
+        height: 220px;
+        margin: 0 3px;
+        border: 1px solid #000;
+    }
+
+    .action-button {
+        font: bold 20px sans-serif;
+        width: 20px;
+    }
+
+    .action-button:hover {
+        transform: scale(0.8);
+    }
+
+    /*Locais da pizzaria*/
+    .home {
+        padding: 10px;
+    }
+
+    .home .homeContainer h1 {
+        font-size: 60px;
+        padding: 10px;
+    }
+
+    .home .homeContainer p {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .home .homeContainerContent {
+        flex-direction: column;
+    }
+
+    .home .homeContainerContent .homeContent {
+        width: 100%;
+    }
+
+    /*Itens do cardápio*/
+    .cardapio .cardapioItem h1 {
+        font-size: 60px;
+        padding: 10px;
+    }
+
+    .cardapio .cardapioSection {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer {
+        flex-direction: column;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioImg Img {
+        width: 95%;
+        height: 200px;
+        border-radius: 50px;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioContent {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioContent h2 {
+        font-size: 19px;
+        margin: 5px 0;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioContent p {
+        font-size: 17px;
+        margin: 10px 0;
+    }
+
+    .cardapio .cardapioSection .cardapioContainer .cardapioContent a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .reserve {
+        background-image: url(Assets/Imagens/backgroundSection01.jpg);
+    }
+
+    .reserve .containerReserve {
+        width: 100%;
+    }
+
+    .reserve .containerReserve h1 {
+        font-size: 40px;
+        color: red;
+    }
+
+    /*Seção de delivery*/
+    .delivery .contentHeader {
+        width: 100%;
+    }
+
+    .delivery .contentHeader h1 {
+        font-size: 70px;
+    }
+
+    .delivery .contentHeader p {
+        font-size: 50px;
+    }
+
+    .delivery .containerDelivery {
+        flex-direction: column;
+    }
+
+    .delivery .containerDelivery {
+        width: auto;
+    }
+
+    .delivery .containerDelivery .contentItens {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .delivery .containerDelivery .contentItens .deliveryItens {
+        padding: 0;
+        background: #000;
+    }
+
+    .delivery .containerDelivery .contentItens .deliveryItens .Itens {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .delivery .containerDelivery .contentItens .deliveryItens .Itens i {
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    /*Seçao contato fale conosco*/
+    .faleConosco {
+        height: auto;
+    }
+
+    .faleConosco .faleConoscoHeader h1 {
+        font-size: 70px;
+    }
+
+    .faleConosco .contentFaleConosco {
+        flex-direction: column;
+    }
+
+    .faleConosco .contentFaleConosco .containerContact {
+        width: 100%;
+    }
+
+    .faleConosco .contentFaleConosco .containerContact .containerContato {
+        width: 100%;
+    }
+
+    /*Seção de horarios*/
+    .containerHorario .contentHorario {
+        flex-direction: column;
+    }
+
+    .containerHorario .contentHorario .Itens {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /*Seção de apresentaçaõ e pagamentos*/
+    .redes {
+        padding: 5px;
+    }
+
+    .redes .containerRedes {
+        flex-direction: column;
+    }
+
+    .redes .containerRedes .contentRedes {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+    /*Responsividade para TABLETS & outros dispositivos maiores*/
     body,
     main {
         width: 100vw;

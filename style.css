@@ -548,11 +548,6 @@ main .itemContainer .itemContent p>a:hover {
     width: 80%;
 }
 
-.delivery .containerDelivery img {
-    width: 400px;
-    height: 350px;
-}
-
 .delivery .containerDelivery .contentItens {
     width: auto;
     height: auto;
@@ -917,7 +912,7 @@ footer span a:hover {
     color: #850D23;
 }
 
-@media screen and (min-width: 390px) and (max-width: 844px) {
+@media screen and (max-width: 900px) {
 
     /*Responsividade para Smartphones & dispositivos menores*/
     .headerDesktop {
@@ -1132,7 +1127,7 @@ footer span a:hover {
     }
 
     .reserve {
-        background-image: url(Assets/Imagens/teste[\ \(6\).jpg);
+        background-image: url(Assets/Imagens/backgroundSection01.jpg);
     }
 
     .reserve .containerReserve {
@@ -1163,10 +1158,6 @@ footer span a:hover {
 
     .delivery .containerDelivery {
         width: auto;
-    }
-
-    .delivery .containerDelivery img {
-        display: none
     }
 
     .delivery .containerDelivery .contentItens {
@@ -1238,7 +1229,7 @@ footer span a:hover {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 901px) {
 
     /*Responsividade para TABLETS & outros dispositivos*/
     body,
@@ -1253,14 +1244,6 @@ footer span a:hover {
 
     .carroselSlider .container-slide .action-button {
         font-size: 50px;
-    }
-
-    .carroselSlider .container-slide .container-items {
-        /*Sem necessidade de alteração*/
-    }
-
-    .carroselSlider .container-slide .container-items .item {
-        /*Sem necessidade alteração*/
     }
 
     .carroselSlider .container-slide .container-items .item img {
@@ -1287,9 +1270,5 @@ footer span a:hover {
 
     .delivery .containerDelivery .contentItens {
         background-color: #1A1A1A;
-    }
-
-    .delivery .containerDelivery img {
-        display: none;
     }
 }

@@ -18,7 +18,7 @@
             <div class="navItems">
                 <a href="#">Cardápio</a>
                 <a href="#">Delivery</a>
-                <a href="#">Reservas</a>
+                <a href="#">Destaques</a>
                 <a href="#">Nossas Casas</a>
                 <a href="#">Blog</a>
                 <a href="#">Contato</a>
@@ -31,25 +31,24 @@
         <img src="Assets/LogoTipo/itemPizzaria.jpeg" alt="" />
         <nav>
             <div class="nav-item">
-                <button class="nav-button">Cardápio</button>
+                <button class="nav-button"><a href="#scrollCardapio">Cardápio</a></button>
             </div>
 
             <div class="nav-item">
-                <button class="nav-button">Delivery</button>
+                <button class="nav-button"><a href="#scrollDelivery">Delivery</a></button>
             </div>
 
             <div class="nav-item">
-                <button class="nav-button">Reservas</button>
+                <button class="nav-button"><a href="#scrollDestaque">Destaques</a></button>
             </div>
 
             <div class="nav-item">
                 <button class="nav-button">
-                    Nossas Casas
+                    <a href="#scrollCasas">Nossas Casas</a>
                     <span class="fas fa-chevron-down"></span>
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Igaratá</a>
-                    <a href="#">Jacareí</a>
                     <a href="#">São José dos Campos</a>
                 </div>
             </div>
@@ -68,7 +67,7 @@
 
             <div class="nav-item">
                 <button class="nav-button">
-                    Contato
+                    <a href="#scrollContato">Contato</a>
                     <span class="fas fa-chevron-down"></span>
                 </button>
                 <div class="dropdown-content">
@@ -82,14 +81,14 @@
     <main>
         <section class="itemContainer">
             <article class="itemContent">
-                <h1>O sabor da Margherita</h1>
-                <h2>Há 20 anos na Gastronomia Brasileira</h2>
+                <h1 id="tituloAnimado"><!--O titulo foi add em JS--></h1>
+                <h2 id="subtituloAnimado"><!--O subTitulo foi add em JS--></h2>
                 <p><a href="">Conheça nossa historia</a></p>
             </article>
             <!--OK-->
         </section>
 
-        <section class="carroselSlider">
+        <section class="carroselSlider" id="scrollCardapio">
             <div class="carroselInformation">
                 <i class="fas fa-utensils"></i>
                 <h1>cardápio</h1>
@@ -104,7 +103,7 @@
 
         </section>
 
-        <section class="home">
+        <section class="home" id="scrollCasas">
             <div class="homeContainer">
                 <span class="fas fa-home"></span>
                 <h1>Conheça nossas casas</h1>
@@ -146,7 +145,7 @@
             <!--OK-->
         </section>
 
-        <section class="cardapio">
+        <section class="cardapio" id="scrollDestaque">
             <div class="cardapioItem">
                 <span class="fas fa-star"></span>
                 <h1>Destaques do Cardápio</h1>
@@ -213,7 +212,7 @@
             <!--OK imagem de backGround-->
         </section>
 
-        <section class="delivery">
+        <section class="delivery" id="scrollDelivery">
             <div class="contentHeader">
                 <i class="fas fa-motorcycle"></i>
                 <h1>Delivery</h1>
@@ -223,7 +222,7 @@
             <!--OK-->
         </section>
 
-        <section class="faleConosco">
+        <section class="faleConosco" id="scrollContato">
             <div class="faleConoscoHeader">
                 <span class="fas fa-comments"></span>
                 <h1>Fale Conosco</h1>
@@ -319,23 +318,23 @@
         <section class="redes">
             <div class="containerRedes">
                 <div class="contentRedes">
-                    <img src="Assets/LogoTipo/itemPizzaria.jpeg" alt="" width="100%" height="120px" />
+                    <img src="Assets/LogoTipo/itemPizzaria.jpeg" alt="" width="100%" height="140px" />
                     <p>A La Casa Dela Pizza, tem uma história de sucesso com definitivas contribuições á gastronomia do
                         estado de São Paulo</p>
                 </div>
 
                 <div class="contentRedes">
-                    <p>A La Casa Dela Pizza, tem uma história de sucesso com definitivas contribuições á gastronomia do
-                        estado de São Paulo
+                    <img src="Assets/LogoTipo/itemPagSeguro.jpg" alt="" width="100%" height="140px">
+                    <p>Aceitamos todas as bandeiras de cartões e vale refeições
                     </p>
-                    <img src="Assets/LogoTipo/itemPagamento.png" alt="" width="100%" height="50px" />
+                    <img src="Assets/LogoTipo/itemPagamento.png" alt="" width="100%" height="40px" />
                 </div>
 
                 <div class="contentRedes">
-                    <img src="Assets/LogoTipo/itemTripAdvisor.png" alt="" width="100%" height="120px" />
+                    <img src="Assets/LogoTipo/itemTripAdvisor.png" alt="" width="100%" height="140px" />
                     <p>
-                        A La Casa Dela Pizza, tem uma história de sucesso com definitivas
-                        contribuições á gastronomia do estado de São Paulo
+                        Nossa casa tem uma boa localização em um lugar estrategico onde vc pode desfrutar de toda
+                        tranquilidade do local
                     </p>
                 </div>
 

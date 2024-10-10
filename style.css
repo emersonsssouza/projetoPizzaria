@@ -53,6 +53,24 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #850D23;
+    height: 150px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*Cabeçalho*/
@@ -90,6 +108,11 @@ body {
 
 .headerDesktop nav .nav-item .nav-button:hover {
     color: var(--Hover);
+}
+
+.headerDesktop nav .nav-item .nav-button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /*Caixas do Menu DropDown*/
@@ -154,11 +177,10 @@ main {
 main .itemContainer .itemContent h1 {
     font-size: 100px;
     font-family: "GreatVibes";
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
     color: red;
-    user-select: none;
 }
 
 main .itemContainer .itemContent h2 {
@@ -733,6 +755,7 @@ main .itemContainer .itemContent p>a:hover {
     font-family: "Arial";
     font-size: 18px;
     font-weight: lighter;
+    hyphens: auto;
 }
 
 /*2º coluna*/
@@ -1069,6 +1092,7 @@ footer span a:hover {
     }
 
     .faleConosco .contentFaleConosco {
+        width: 95%;
         flex-direction: column;
     }
 
@@ -1103,6 +1127,20 @@ footer span a:hover {
         width: 100%;
         height: auto;
         margin: 5px 0;
+        background: #1A1A1A;
+        box-shadow: none;
+        border-radius: none;
+        border: 1px solid #fff;
+    }
+
+    .redes .containerRedes .contentRedes img {
+        width: 95%;
+        border-radius: 30px;
+    }
+
+    .redes .containerRedes .contentRedes p {
+        padding: 10px;
+        hyphens: auto;
     }
 }
 

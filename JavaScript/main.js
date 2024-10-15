@@ -1,4 +1,4 @@
-//Animações de escrever automaticamenteH1 e H2
+//Escrita automatica no primeiro h1;
 const texto = "O sabor da Margherita";
 const elementoTexto = document.getElementById("tituloAnimado");
 let index = 0;
@@ -9,7 +9,7 @@ function digitar() {
         setTimeout(digitar, 150); //Velocidade de digitação em ms;
     }
 }
-//Animação H2
+//Escrita automatica no primeiro p;
 const subtitle = "Há 20 anos na gastronomia Brasileira";
 const elementSubtitle = document.getElementById("subtituloAnimado");
 let valueSub = 0;

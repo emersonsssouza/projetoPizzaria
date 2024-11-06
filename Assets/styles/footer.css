@@ -1,0 +1,21 @@
+footer {
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-items {
+    padding: 28px 8%;
+    background-color: #ffcb45;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+}

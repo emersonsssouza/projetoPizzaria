@@ -56,21 +56,6 @@
     box-shadow: none;
 }
 
-#banner {
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-    z-index: 1;
-    /*Conteudo suspenso*/
-}
-
-#banner img {
-    width: fit-content;
-    height: 100%;
-    /*Conteudo suspenso*/
-}
-
 .shape {
     background-color: transparent;
     width: 40%;
@@ -85,7 +70,7 @@
 @media screen and (max-width: 1170px) {
     #home {
         min-height: 100%;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     #banner,
@@ -102,11 +87,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     #phone_button button {
         display: none;
     }

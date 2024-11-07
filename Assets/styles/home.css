@@ -102,6 +102,11 @@
 }
 
 @media screen and (max-width: 450px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     #phone_button button {
         display: none;
     }
